@@ -1,0 +1,192 @@
+.RequestItem {
+  width: 100%;
+  background: $light-bg;
+  border-radius: 12px;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  & + [pagination] {
+    margin-top: 0;
+  }
+}
+
+.RequestTop {
+  padding: 20px 20px 8px;
+}
+
+.RequestMainInfo {
+  width: 100%;
+}
+
+.RequestSubInfoHeader {
+  padding: 8px 20px 20px;
+}
+
+.RequestSubInfoHeaderList {
+  padding: 8px 20px;
+  border-top: 4px solid $white;
+}
+
+.RequestSubInfoHeaderItem {
+  width: 44.8%;
+  &:first-child {
+    margin-right: 16px;
+  }
+}
+
+.RequestAddStudent {
+  width: 218px;
+  margin-bottom: 32px;
+}
+
+.RequestSubInfoContent {
+  padding: 16px 20px;
+  border-top: 4px solid $white;
+}
+
+.RequestSubInfoContentItem {
+  &:nth-child(odd) {
+    width: 35%;
+  }
+
+  &:nth-child(even) {
+    width: 65%;
+  }
+}
+
+.RequestStudentsTable {
+  padding: 16px 20px 20px;
+  border-top: 4px solid $white;
+}
+
+@media screen and (max-width: $xl-breakpoint) {
+  .RequestItem {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    [data-tag] {
+      font-size: 14px;
+      line-height: 20px;
+      white-space: normal;
+    }
+
+    & + [pagination] {
+      margin-top: 12px;
+    }
+  }
+
+  .RequestItemPrice {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .RequestTop {
+    padding: 16px 16px 8px;
+  }
+
+  .RequestSubInfoHeader {
+    padding: 8px 16px 16px;
+    flex-wrap: wrap;
+  }
+
+  .RequestSubInfoHeaderItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      margin-right: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    div:last-child {
+      font-size: 14px;
+      line-height: 21px;
+      margin-left: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: $md-breakpoint) {
+  .RequestItem {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      width: 100vw;
+      height: 100%;
+      background: $light-bg;
+    }
+
+    & + [pagination] {
+      margin-top: -16px;
+    }
+  }
+
+  .RequestMainInfo {
+    margin-right: 0;
+    padding-right: 26px;
+  }
+
+  .RequestMainInfoTop {
+    flex-direction: column;
+    align-items: flex-start;
+
+    div:first-child {
+      margin-bottom: 4px;
+    }
+  }
+
+  .RequestConrols {
+    position: absolute;
+    right: 0;
+    top: 16px;
+
+    button {
+      width: 24px;
+      height: 24px;
+      background: none;
+    }
+  }
+
+  .RequestItemPrice {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .RequestTop {
+    padding: 16px 0 8px;
+    position: relative;
+  }
+
+  .RequestSubInfoHeader {
+    padding: 8px 0 16px;
+    position: relative;
+  }
+
+  .RequestSubInfoHeaderItem {
+    flex-wrap: wrap;
+
+    div {
+      width: 100%;
+
+      &:last-child {
+        margin: 2px 0 0;
+      }
+    }
+  }
+}
