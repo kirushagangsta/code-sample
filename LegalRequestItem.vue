@@ -1,8 +1,3 @@
-/*
-*
-* Сделано в студии AppFox
-*
-*/
 <template>
   <div
     :class="$style.RequestItem"
