@@ -1,8 +1,3 @@
-/*
-*
-* Сделано в студии AppFox
-*
-*/
 <template>
   <div>
     <div class="h1 mb-16">
